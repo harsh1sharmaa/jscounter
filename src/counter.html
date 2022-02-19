@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+    <script>
+
+      
+        function add(){
+            let n=parseInt( document.getElementById("midle").innerText);
+         document.getElementById("midle").innerText=++n;
+
+        }
+    function min(){
+        let n=parseInt( document.getElementById("midle").innerText);
+         document.getElementById("midle").innerText=--n;
+            
+        }
+
+    </script>
+</head>
+<body>
+    <div id="outer">
+        
+        <div id="main">
+
+
+            <div class="one btn" onclick="add()" >+</div>
+            <div class="one" id="midle">0</div>
+            <div class="one btn" onclick="min()" >-</div>
+        </div>
+
+
+    </div>
+
+   
+    
+</body>
+</html>
